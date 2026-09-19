@@ -1,0 +1,40 @@
+@import url("_base.css");
+
+.page-head{padding:64px 0 28px;}
+.page-head h1{font-size:2.3rem; letter-spacing:-0.01em; margin:14px 0 16px;}
+.page-sub{color:var(--text-muted); max-width:56ch; margin-bottom:28px;}
+.progress-track{height:4px; background:var(--border-soft); border-radius:4px; overflow:hidden;}
+.progress-fill{height:100%; width:0%; background:var(--accent); transition:width .2s ease;}
+.progress-label{color:var(--text-faint); font-size:0.8rem; margin-top:8px;}
+
+.quiz-list{padding:16px 0 40px;}
+.q-card{
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-m);
+  padding:22px; margin-bottom:16px;
+}
+.q-card .q-index{color:var(--text-faint); font-size:0.8rem; margin-bottom:8px;}
+.q-card h3{font-size:1rem; margin-bottom:16px; line-height:1.5;}
+.q-options{display:flex; flex-direction:column; gap:8px;}
+.q-option{
+  display:flex; align-items:center; gap:10px;
+  padding:11px 14px; border:1px solid var(--border); border-radius:var(--radius-s);
+  font-size:0.9rem; background:transparent; color:var(--text); text-align:left;
+}
+.q-option:hover{border-color:var(--text-muted);}
+.q-option.selected{border-color:var(--accent-strong); background:var(--accent-soft);}
+.hint-toggle{
+  margin-top:14px; font-size:0.82rem; color:var(--text-muted);
+  background:none; border:none; padding:0; display:inline-flex; align-items:center; gap:6px;
+}
+.hint-toggle:hover{color:var(--text);}
+.hint-text{
+  margin-top:10px; font-size:0.85rem; color:var(--text-muted);
+  background:var(--bg-raised); border:1px solid var(--border-soft); border-radius:var(--radius-s);
+  padding:10px 12px; display:none;
+}
+.hint-text.show{display:block;}
+.submit-row{margin-top:8px; display:flex; justify-content:flex-end; padding-bottom:40px;}
+@media (max-width:600px){
+  .submit-row{justify-content:stretch;}
+  .submit-row .btn{width:100%; justify-content:center;}
+}

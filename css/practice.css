@@ -1,0 +1,45 @@
+@import url("_base.css");
+
+.page-head{padding:64px 0 40px;}
+.page-head h1{font-size:2.3rem; letter-spacing:-0.01em; margin:14px 0 16px;}
+.page-sub{color:var(--text-muted); max-width:56ch;}
+
+.practice-list{padding:8px 0 40px;}
+.email-card{
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-m);
+  margin-bottom:20px; overflow:hidden;
+}
+.email-meta{padding:20px 22px; border-bottom:1px solid var(--border-soft);}
+.email-meta .context-tag{
+  display:inline-block; font-size:0.72rem; color:var(--text-faint);
+  border:1px solid var(--border); border-radius:20px; padding:3px 10px; margin-bottom:12px;
+}
+.email-meta dl{margin:0; display:grid; grid-template-columns:64px 1fr; row-gap:6px; font-size:0.88rem;}
+.email-meta dt{color:var(--text-faint);}
+.email-meta dd{margin:0; color:var(--text);}
+.email-message{padding:20px 22px; color:var(--text-muted); font-size:0.93rem; line-height:1.6; border-bottom:1px solid var(--border-soft);}
+.email-actions{padding:16px 22px; display:flex; gap:12px; flex-wrap:wrap;}
+.choice-btn{
+  flex:1; min-width:160px; padding:12px 16px; border-radius:var(--radius-s);
+  border:1px solid var(--border); background:transparent; color:var(--text); font-size:0.9rem; font-weight:600;
+  transition:border-color .15s ease, background .15s ease;
+}
+.choice-btn:hover{border-color:var(--text-muted);}
+.choice-btn.selected-suspicious{border-color:var(--accent); background:var(--accent-soft); color:var(--accent-strong);}
+.choice-btn.selected-safe{border-color:var(--safe); background:var(--safe-soft); color:var(--safe);}
+.choice-btn[disabled]{cursor:default;}
+.email-explain{
+  padding:18px 22px; border-top:1px solid var(--border-soft);
+  background:var(--bg-raised); font-size:0.9rem; display:none;
+}
+.email-explain.show{display:block;}
+.email-explain .explain-label{font-weight:600; display:block; margin-bottom:6px;}
+.email-explain p{color:var(--text-muted); margin:0;}
+.email-explain.correct .explain-label{color:var(--safe);}
+.email-explain.incorrect .explain-label{color:var(--accent-strong);}
+
+.continue-row{margin-top:12px; display:flex; justify-content:flex-end;}
+@media (max-width:600px){
+  .continue-row{justify-content:stretch;}
+  .continue-row .btn{width:100%; justify-content:center;}
+}

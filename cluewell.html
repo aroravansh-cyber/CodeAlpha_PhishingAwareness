@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClueWell-Mail · LearnPhish</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/cluewell.css">
+
+</head>
+<body>
+<nav class="site-nav" aria-label="Primary"><div class="wrap"><a href="index.html" class="brand">LEARN<span>PHISH</span></a><div class="nav-icons"><a href="index.html" class="" aria-label="Home"><svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg><span class="tip">Home</span></a><a href="learn.html" class="" aria-label="Learn"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5V5.5Z"/><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"/></svg><span class="tip">Learn</span></a><a href="about.html" class="" aria-label="About"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6"/><circle cx="12" cy="7.5" r="0.9" fill="currentColor" stroke="none"/></svg><span class="tip">About</span></a><a href="test.html" class="" aria-label="Phish Test"><svg viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></svg><span class="tip">Phish Test</span></a><a href="cluewell.html" class="active" aria-label="ClueWell-Mail"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg><span class="tip">ClueWell-Mail</span></a></div></div></nav>
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Companion project</p>
+    <h1>ClueWell-Mail</h1>
+    <p class="page-sub">Analyze suspicious email signals.</p>
+  </div>
+</section>
+
+<section class="cluewell-tool">
+  <div class="wrap cluewell-tool-grid">
+    <div class="cluewell-input">
+      <label for="email-text">Paste fictional or authorized email content</label>
+      <textarea id="email-text" rows="10" placeholder="Paste the sender, subject, and message body here…"></textarea>
+      <button class="btn btn-primary" id="analyze-btn">Analyze →</button>
+      <p class="input-note">Nothing you paste here is stored or transmitted. This runs only in your browser.</p>
+    </div>
+    <div class="cluewell-output" id="cluewell-output" aria-live="polite">
+      <p class="output-placeholder">Your analysis will appear here once you submit some text.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer"><div class="wrap"><p>LearnPhish — a phishing-awareness education project. Not a real security product.</p><p>Built for learning, not for collecting your data.</p></div></footer>
+<script src="js/cluewell.js"></script>
+</body>
+</html>

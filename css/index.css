@@ -1,0 +1,43 @@
+@import url("_base.css");
+
+.hero{padding:72px 0 88px;}
+.hero-grid{display:grid; grid-template-columns:1.1fr 1fr; gap:56px; align-items:center;}
+.eyebrow{color:var(--accent-strong); font-size:0.85rem; margin-bottom:14px;}
+.hero h1{font-size:3.4rem; letter-spacing:-0.02em; margin-bottom:20px;}
+.hero-sub{color:var(--text-muted); font-size:1.08rem; max-width:46ch; margin-bottom:32px;}
+.hero-actions{display:flex; gap:14px; flex-wrap:wrap;}
+.hero-visual .image-placeholder{min-height:320px;}
+
+.journey{padding:72px 0;}
+.journey h2{font-size:1.6rem; margin-bottom:36px;}
+.journey-steps{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,1fr); gap:0;}
+.journey-steps li{
+  display:flex; flex-direction:column; gap:10px;
+  padding:20px 24px 20px 0; border-right:1px solid var(--border-soft);
+}
+.journey-steps li:last-child{border-right:none;}
+.step-num{font-family:var(--font-serif); font-style:italic; color:var(--text-faint); font-size:1.1rem;}
+.journey-steps h3{font-size:1.05rem; margin-bottom:4px;}
+.journey-steps p{color:var(--text-muted); font-size:0.92rem;}
+
+.learn-cards{padding:72px 0;}
+.learn-cards h2{font-size:1.6rem; margin-bottom:32px;}
+.card-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
+.card h3{font-size:1.05rem; margin-bottom:8px;}
+.card p{color:var(--text-muted); font-size:0.9rem;}
+
+.cluewell-feature{padding:72px 0 40px;}
+.cluewell-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;}
+.cluewell-grid .image-placeholder{min-height:260px;}
+.cluewell-feature h2{font-size:1.7rem; margin:10px 0 16px;}
+.cluewell-copy{color:var(--text-muted); max-width:46ch; margin-bottom:26px;}
+
+@media (max-width:900px){
+  .hero-grid, .cluewell-grid{grid-template-columns:1fr; gap:32px;}
+  .hero h1{font-size:2.5rem;}
+  .journey-steps, .card-grid{grid-template-columns:repeat(2,1fr);}
+  .journey-steps li{border-right:none; border-bottom:1px solid var(--border-soft);}
+}
+@media (max-width:520px){
+  .journey-steps, .card-grid{grid-template-columns:1fr;}
+}

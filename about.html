@@ -1,58 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About · LearnPhish</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/about.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>About · LearnPhish</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital@0;1&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/about.css">
 </head>
+
 <body>
-<nav class="site-nav" aria-label="Primary"><div class="wrap"><a href="index.html" class="brand">LEARN<span>PHISH</span></a><div class="nav-icons"><a href="index.html" class="" aria-label="Home"><svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg><span class="tip">Home</span></a><a href="learn.html" class="" aria-label="Learn"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5V5.5Z"/><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"/></svg><span class="tip">Learn</span></a><a href="about.html" class="active" aria-label="About"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6"/><circle cx="12" cy="7.5" r="0.9" fill="currentColor" stroke="none"/></svg><span class="tip">About</span></a><a href="test.html" class="" aria-label="Phish Test"><svg viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></svg><span class="tip">Phish Test</span></a><a href="cluewell.html" class="" aria-label="ClueWell-Mail"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg><span class="tip">ClueWell-Mail</span></a></div></div></nav>
 
-<section class="page-head">
-  <div class="wrap">
-    <p class="eyebrow">About</p>
-    <h1>Why LearnPhish exists</h1>
-  </div>
-</section>
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
 
-<section class="about-body">
-  <div class="wrap">
-    <section>
-      <h2>What this is</h2>
-      <p>LearnPhish is a small, self-contained education project about phishing. It doesn't send real emails, collect real credentials, or run real campaigns — it exists to teach the pattern behind phishing so it's easier to recognize in the wild.</p>
-    </section>
-    <section>
-      <h2>Why it matters</h2>
-      <p>Phishing doesn't succeed by breaking software; it succeeds by borrowing trust and rushing a decision. Most people can catch it once they know what to look for — the goal here is building that instinct.</p>
-    </section>
-    <section>
-      <h2>How the journey works</h2>
-      <p>The site follows four steps: <strong>Learn</strong> the concepts across eight short topics, <strong>Practice</strong> on fictional examples, take the <strong>Test</strong> to check your instincts, and see your <strong>Result</strong>.</p>
-    </section>
-    <section>
-      <h2>What Practice does</h2>
-      <p>Practice shows six fictional email scenarios. You mark each as suspicious or likely safe, then see the reasoning behind the correct answer — no real data is used or collected.</p>
-    </section>
-    <section>
-      <h2>What the Phish Test does</h2>
-      <p>The test is 20 scenario-based questions covering senders, links, urgency, and social engineering. Twelve or more correct is a pass; your latest result is saved locally in your browser.</p>
-    </section>
-    <section>
-      <h2>What ClueWell-Mail is</h2>
-      <p>ClueWell-Mail is a separate, optional demo that looks for educational signals — like urgency or credential requests — in email text you paste in. It's a teaching aid, not a security verdict, and it doesn't store or transmit what you paste.</p>
-    </section>
-    <section>
-      <h2>The purpose of this project</h2>
-      <p>Everything here is built to make one habit more automatic: pausing before you click. That pause is most of what phishing awareness actually is.</p>
-    </section>
-  </div>
-</section>
+  <nav class="site-nav" aria-label="Primary">
 
-<footer class="site-footer"><div class="wrap"><p>LearnPhish — a phishing-awareness education project. Not a real security product.</p><p>Built for learning, not for collecting your data.</p></div></footer>
-<script src="js/about.js"></script>
+    <div class="wrap">
+
+      <a href="index.html" class="brand">
+        LEARN<span>PHISH</span>
+      </a>
+
+      <div class="nav-icons">
+
+        <!-- Home -->
+        <a href="index.html" aria-label="Home">
+
+          <svg viewBox="0 0 24 24">
+            <path d="M3 10.5 12 3l9 7.5"/>
+            <path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/>
+          </svg>
+
+          <span class="tip">Home</span>
+
+        </a>
+
+
+        <!-- Learn -->
+        <a href="learn.html" aria-label="Learn">
+
+          <svg viewBox="0 0 24 24">
+            <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5V5.5Z"/>
+            <path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"/>
+          </svg>
+
+          <span class="tip">Learn</span>
+
+        </a>
+
+
+        <!-- About -->
+        <a href="about.html" class="active" aria-label="About">
+
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 11v6"/>
+            <circle
+              cx="12"
+              cy="7.5"
+              r="0.9"
+              fill="currentColor"
+              stroke="none"
+            />
+          </svg>
+
+          <span class="tip">About</span>
+
+        </a>
+
+
+        <!-- ClueWell-Mail -->
+        <a href="cluewell.html" aria-label="ClueWell-Mail">
+
+          <svg viewBox="0 0 24 24">
+            <circle cx="10.5" cy="10.5" r="6.5"/>
+            <path d="m20 20-4.8-4.8"/>
+          </svg>
+
+          <span class="tip">ClueWell-Mail</span>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- =========================
+       PAGE HEADER
+  ========================== -->
+
+  <section class="page-head">
+
+    <div class="wrap">
+
+      <p class="eyebrow">About</p>
+
+      <h1>Why LearnPhish exists</h1>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       ABOUT CONTENT
+  ========================== -->
+
+  <main class="about-body">
+
+    <div class="wrap">
+
+
+      <!-- =========================
+           01 — WHAT THIS IS
+      ========================== -->
+
+      <section class="about-section">
+
+        <div class="about-content">
+
+          <span class="section-number">01</span>
+
+          <h2>What this is</h2>
+
+          <p>
+            LearnPhish is a small, self-contained education project about
+            phishing. It doesn't send real emails, collect real credentials,
+            or run real campaigns — it exists to teach the pattern behind
+            phishing so it's easier to recognize in the wild.
+          </p>
+
+        </div>
+
+        <div class="about-image">
+
+          <img
+            src="assets/images/about-01.png"
+            alt="Illustration representing phishing education"
+          >
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           02 — WHY IT MATTERS
+      ========================== -->
+
+      <section class="about-section">
+
+        <div class="about-content">
+
+          <span class="section-number">02</span>
+
+          <h2>Why it matters</h2>
+
+          <p>
+            Phishing doesn't succeed by breaking software; it succeeds by
+            borrowing trust and rushing a decision. Most people can catch it
+            once they know what to look for — the goal here is building that
+            instinct.
+          </p>
+
+        </div>
+
+        <div class="about-image">
+
+          <img
+            src="assets/images/about-02.png"
+            alt="Illustration representing phishing awareness"
+          >
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           03 — HOW THE JOURNEY WORKS
+      ========================== -->
+
+      <section class="about-section">
+
+        <div class="about-content">
+
+          <span class="section-number">03</span>
+
+          <h2>How the journey works</h2>
+
+          <p>
+            The site follows four steps:
+            <strong>Learn</strong> the concepts across eight short topics,
+            <strong>Practice</strong> on fictional examples, take the
+            <strong>Test</strong> to check your instincts, and see your
+            <strong>Result</strong>.
+          </p>
+
+        </div>
+
+        <div class="about-image">
+
+          <img
+            src="assets/images/about-03.png"
+            alt="Illustration representing the LearnPhish learning journey"
+          >
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           04 — WHAT PRACTICE DOES
+      ========================== -->
+
+      <section class="about-section">
+
+        <div class="about-content">
+
+          <span class="section-number">04</span>
+
+          <h2>What Practice does</h2>
+
+          <p>
+            Practice shows six fictional email scenarios. You mark each as
+            suspicious or likely safe, then see the reasoning behind the
+            correct answer — no real data is used or collected.
+          </p>
+
+        </div>
+
+        <div class="about-image">
+
+          <img
+            src="assets/images/about-04.png"
+            alt="Illustration representing phishing practice scenarios"
+          >
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           05 — WHAT THE PHISH TEST DOES
+      ========================== -->
+
+      <a href="https://cluewell-mail.netlify.app/" class="about-section">
+
+        <div class="about-content">
+
+          <span class="section-number">05</span>
+
+          <h2>What the Phish Test does</h2>
+
+          <p>
+            The test is 20 scenario-based questions covering senders, links,
+            urgency, and social engineering. Twelve or more correct is a pass;
+            your latest result is saved locally in your browser.
+          </p>
+
+        </div>
+
+        <div class="about-image">
+
+          <img
+            src="assets/images/about-05.png"
+            alt="Illustration representing the phishing awareness test"
+          >
+
+        </div>
+
+      </a>
+
+      <!-- =========================
+           06 — WHAT CLUEWELL-MAIL IS
+      ========================== -->
+
+      <section class="about-section">
+
+        <div class="about-content">
+
+          <span class="section-number">06</span>
+
+          <h2>What ClueWell-Mail is</h2>
+
+          <p>
+            ClueWell-Mail is a separate, optional demo that looks for
+            educational signals — like urgency or credential requests — in
+            email text you paste in. It's a teaching aid, not a security
+            verdict, and it doesn't store or transmit what you paste.
+          </p>
+
+        </div>
+
+        <div class="about-image">
+
+          <img
+            src="assets/images/about-06.png"
+            alt="Illustration representing ClueWell-Mail"
+          >
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           07 — THE PURPOSE OF THIS PROJECT
+      ========================== -->
+
+      <section class="about-section">
+
+        <div class="about-content">
+
+          <span class="section-number">07</span>
+
+          <h2>The purpose of this project</h2>
+
+          <p>
+            Everything here is built to make one habit more automatic: pausing
+            before you click. That pause is most of what phishing awareness
+            actually is.
+          </p>
+
+        </div>
+
+        <div class="about-image">
+
+          <img
+            src="assets/images/about-07.png"
+            alt="Illustration representing the purpose of LearnPhish"
+          >
+
+        </div>
+
+      </section>
+
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer class="site-footer">
+
+    <div class="wrap">
+
+      <p>
+        © 2026 ClueWell-Mail. All rights reserved.
+      </p>
+
+      <p>
+        Built for cybersecurity education, not for collecting your data.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <script src="js/about.js"></script>
+
 </body>
 </html>

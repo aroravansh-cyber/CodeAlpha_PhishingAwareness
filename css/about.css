@@ -1,8 +1,199 @@
 @import url("_base.css");
 
-.page-head{padding:64px 0 32px;}
-.page-head h1{font-size:2.3rem; letter-spacing:-0.01em; margin:14px 0 0;}
-.about-body{padding:8px 0 80px;}
-.about-body section{max-width:66ch; margin-bottom:36px;}
-.about-body h2{font-size:1.15rem; margin-bottom:10px;}
-.about-body p{color:var(--text-muted);}
+.page-head {
+
+  padding: 64px 0 32px;
+
+}
+
+.page-head h1 {
+
+  font-size: 2.3rem;
+
+  letter-spacing: -0.01em;
+
+  margin: 14px 0 0;
+
+}
+
+.about-body {
+
+  padding: 8px 0 80px;
+
+}
+
+.about-body section {
+
+  max-width: 100%;
+
+  margin-bottom: 56px;
+
+}
+
+.about-section {
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+
+  gap: 48px;
+
+  align-items: center;
+
+}
+
+.about-content {
+
+  min-width: 0;
+
+}
+
+.section-number {
+
+  display: inline-block;
+
+  margin-bottom: 10px;
+
+  font-size: 0.8rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.08em;
+
+  color: var(--accent);
+
+}
+
+.about-body h2 {
+
+  font-size: 1.15rem;
+
+  margin-bottom: 10px;
+
+}
+
+.about-body p {
+
+  color: var(--text-muted);
+
+  line-height: 1.7;
+
+  margin: 0;
+
+}
+
+.about-image {
+
+  width: 100%;
+
+  aspect-ratio: 16 / 10;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  border: 1px solid var(--border);
+
+  background: var(--surface);
+
+}
+
+.about-image img {
+
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+}
+
+
+/* Transparent PNG + image glow */
+
+.about-image {
+
+  background: transparent;
+
+  border: none;
+
+  overflow: visible;
+
+}
+
+.about-image img {
+
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  background: transparent;
+
+  transition:
+
+    filter 0.15s ease,
+
+    transform 0.15s ease;
+
+}
+
+.about-image img.image-glow {
+
+  filter:
+
+    drop-shadow(0 0 6px rgb(255, 72, 0))
+
+    drop-shadow(0 0 16px rgba(255, 20, 20, 0.95))
+
+    drop-shadow(0 0 32px rgba(255, 20, 20, 0.8))
+
+    drop-shadow(0 0 60px rgba(255, 0, 0, 0.55))
+
+    drop-shadow(0 0 90px rgba(255, 0, 0, 0.3));
+
+  transform: scale(1.035);
+
+}
+
+
+@media (max-width: 760px) {
+
+  .page-head {
+
+    padding: 48px 0 28px;
+
+  }
+
+  .page-head h1 {
+
+    font-size: 2rem;
+
+  }
+
+  .about-body {
+
+    padding-bottom: 60px;
+
+  }
+
+  .about-section {
+
+    grid-template-columns: 1fr;
+
+    gap: 24px;
+
+    margin-bottom: 48px;
+
+  }
+
+  .about-image {
+
+    aspect-ratio: 16 / 9;
+
+  }
+
+}
